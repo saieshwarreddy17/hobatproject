@@ -37,21 +37,21 @@ const Banner = () => {
       flexDirection: 'column',
       padding: '20px', // Add padding for better spacing
     }}>
-      <Typography variant="h2" fontWeight={600} sx={{ color: '#fff', marginBottom: '20px' }}>
+      <Typography className='bannerheadone' variant="h2" fontWeight={600} sx={{ color: '#fff', marginBottom: '20px' }}>
         Are You a Supplier?
       </Typography>
-      <Typography variant="h4" fontWeight={700} sx={{ color: '#fff', marginBottom: '20px' }}>
+      <Typography className='bannerheadtwo' variant="h4" fontWeight={700} sx={{ color: '#fff', marginBottom: '20px' }}>
         Explore Matching Opportunities
       </Typography>
-      <Box sx={{ display: 'flex', alignItems: 'center', marginBottom: '20px' }}>
-        <TextField
+      <Box className='bannerboxone' sx={{ display: 'flex', alignItems: 'center', marginBottom: '20px' }}>
+        <TextField className='bannertextone'
           placeholder="Search your required service here"
           variant="outlined"
           InputProps={{
             startAdornment: (
               <SearchIcon sx={{ color: 'orange' }} />
             ),
-            sx: { 
+            sx: {
               width: '300px', 
               backgroundColor: 'white', 
               marginTop: '10px', 
@@ -61,7 +61,7 @@ const Banner = () => {
             } 
           }}
         />
-        <TextField
+        <TextField className='bannertexttwo'
           placeholder="Search your desired location here"
           variant="outlined"
           InputProps={{
@@ -79,7 +79,7 @@ const Banner = () => {
             } 
           }}
         />
-        <Button variant="contained" color="success" sx={{ margin:'10px' }}>
+        <Button className='bannerbuttonone' variant="contained" color="success" sx={{ margin:'10px' }}>
           Search
         </Button>
       </Box>

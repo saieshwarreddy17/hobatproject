@@ -13,9 +13,9 @@ const Footer = () => {
 
       <Grid container spacing={2} justifyContent="space-between">
         <Grid item xs={12} md={6}>
-          <Box display="flex" alignItems="center">
+          <Box className='footerboxtwo' display="flex" alignItems="center">
             <Typography variant="h6" sx={{ mr: 2 }}>
-              <img src={logoOne} alt="Logo" style={{ height: '100px', width: '150px' }} />
+              <img className='footerimageone' src={logoOne} alt="Logo" style={{ height: '100px', width: '150px' }} />
             </Typography>
             <Grid container spacing={4}>
               <Grid item>
@@ -38,7 +38,7 @@ const Footer = () => {
           </Box>
         </Grid>
         <Grid item xs={12} md={6} display="flex" justifyContent="flex-end" alignItems="center">
-          <Box textAlign="right">
+          <Box className='footerboxthree' textAlign="right">
             <Box>
               <IconButton href="#" color="inherit" sx={{ border:' 1px solid #fff',borderRadius:'50%',mr: 1}}>
                 <LinkedInIcon />

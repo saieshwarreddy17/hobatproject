@@ -34,8 +34,8 @@ const Navbar = () => {
     <Box sx={{ width: '100%', display: 'flex' }}>
       <AppBar position="static" sx={{ backgroundColor: 'white', width: '100%' }}>
         <Toolbar>
-          <Box sx={{ display: 'flex', alignItems: 'center', ml: 4 }}>
-            <img src={logoTwo} alt="Logo" style={{ height: '100px', width: 'auto' }} />
+          <Box className='navbarboxone' sx={{ display: 'flex', alignItems: 'center', ml: 4 }}>
+            <img className='navbarimageone'src={logoTwo} alt="Logo" style={{ height: '100px', width: 'auto' }} />
           </Box>
 
           <Box sx={{ flexGrow: 1 }} />

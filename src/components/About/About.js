@@ -15,48 +15,48 @@ const About = () => {
   return (
     <Grid container sx={{ paddingTop: '40px', paddingBottom: '40px' }}>
       {/* First 50% */}
-      <Grid item xs={12} md={6} sx={{ display: 'flex', flexDirection: 'column', padding: '0px 60px' }}>
-        <Typography variant="h4" gutterBottom sx={{ fontWeight: 700 }}>
+      <Grid item xs={12} md={6} className='aboutbox' sx={{ display: 'flex', flexDirection: 'column', padding: '0px 60px' }}>
+        <Typography className='aboutheadone' variant="h4" gutterBottom sx={{ fontWeight: 700 }}>
           Ready to dive into HABOT?
         </Typography>
-        <Typography sx={{ fontWeight: 400, mt: 2, mb: 4, fontSize: '15px' }} variant="body1" color='#151515' gutterBottom>
+        <Typography className='aboutheadtwo' sx={{ fontWeight: 400, mt: 2, mb: 4, fontSize: '15px' }} variant="body1" color='#151515' gutterBottom>
           Signing up with HABOT opens the door to a world of new opportunities and potential for business growth. Gain access to a vibrant community of like-minded individuals, unlock valuable resources, and take the first step towards realizing your entrepreneurial dreams.
         </Typography>
-        <Button variant="contained" color="success" sx={{ textAlign: 'center', mr: 30 }} endIcon={<ArrowForwardIcon />}>
+        <Button className='aboutbuttonone' variant="contained" color="success" sx={{ textAlign: 'center', mr: 30 }} endIcon={<ArrowForwardIcon />}>
           Sign Up today!
         </Button>
       </Grid>
       
       {/* Second 50% */}
-      <Grid item xs={12} md={6} sx={{ padding: '0px 60px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
-        <Grid container spacing={2}>
-          <Grid item xs={6} sx={{ textAlign: 'center' }}>
-            <Button variant="outlined" color="warning" sx={{ width: '100%', padding: '10px 0px', color: '#000' }}>
+      <Grid item xs={12} md={6} className='aboutboxtwo' sx={{ padding: '0px 60px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
+        <Grid container spacing={2} className='aboutgridone'>
+          <Grid item xs={6}  className='aboutgridtwo' sx={{ textAlign: 'center' }}>
+            <Button className='aboutbuttontwo' variant="outlined" color="warning" sx={{ width: '100%', padding: '10px 0px', color: '#000' }}>
               Abu Dhabi
             </Button>
           </Grid>
           <Grid item xs={6} sx={{ textAlign: 'center' }}>
-            <Button variant="outlined" color="warning" sx={{ width: '100%', padding: '10px 0px', color: '#000' }}>
+            <Button className='aboutbuttontwo' variant="outlined" color="warning" sx={{ width: '100%', padding: '10px 0px', color: '#000' }}>
               Dubai
             </Button>
           </Grid>
           <Grid item xs={6} sx={{ textAlign: 'center' }}>
-            <Button variant="outlined" color="warning" sx={{ width: '100%', padding: '10px 0px', color: '#000' }}>
+            <Button className='aboutbuttontwo' variant="outlined" color="warning" sx={{ width: '100%', padding: '10px 0px', color: '#000' }}>
               Sharjah
             </Button>
           </Grid>
           <Grid item xs={6} sx={{ textAlign: 'center' }}>
-            <Button variant="outlined" color="warning" sx={{ width: '100%', padding: '10px 0px', color: '#000' }}>
+            <Button className='aboutbuttontwo' variant="outlined" color="warning" sx={{ width: '100%', padding: '10px 0px', color: '#000' }}>
               Fujairah
             </Button>
           </Grid>
           <Grid item xs={6} sx={{ textAlign: 'center' }}>
-            <Button variant="outlined" color="warning" sx={{ width: '100%', padding: '10px 0px', color: '#000' }}>
+            <Button className='aboutbuttontwo' variant="outlined" color="warning" sx={{ width: '100%', padding: '10px 0px', color: '#000' }}>
               Ras Al Khaimah
             </Button>
           </Grid>
           <Grid item xs={6} sx={{ textAlign: 'center' }}>
-            <Button variant="outlined" color="warning" sx={{ width: '100%', padding: '10px 0px', color: '#000' }}>
+            <Button className='aboutbuttontwo' variant="outlined" color="warning" sx={{ width: '100%', padding: '10px 0px', color: '#000' }}>
               Umm Al Quwain
             </Button>
           </Grid>
@@ -64,13 +64,13 @@ const About = () => {
       </Grid>
       
       {/* Below section with YouTube and Tabs */}
-      <Box sx={{ width: '100%', backgroundColor: '#072f57', paddingTop: '60px', paddingBottom: '60px', margin: '60px 60px' }}>
+      <Box className='aboutboxthree' sx={{ width: '100%', backgroundColor: '#072f57', paddingTop: '60px', paddingBottom: '60px', margin: '60px 60px' }}>
         <Grid container>
           {/* First 50% with YouTube link */}
-          <Grid item xs={12} md={6} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <Box sx={{ position: 'relative' }}>
-              <img src={imageOne} alt="YouTube Thumbnail" style={{ width: '100%', height: '250px', borderRadius: '5px' }} />
-              <Button
+          <Grid item xs={12} md={6} className='aboutgridfour' sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <Box className='aboutboxfour'sx={{ position: 'relative' }}>
+              <img src={imageOne} alt="YouTube Thumbnail" className='aboutimage' style={{ width: '100%', height: '250px', borderRadius: '5px' }} />
+              <Button className='aboutbuttonthree'
                 sx={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', color: 'red' }}
                 onClick={() => window.open('https://www.youtube.com/watch?v=IZLp-TZyDkQ', '_blank')}
               >
@@ -80,7 +80,7 @@ const About = () => {
           </Grid>
 
           {/* Second 50% with Tabs */}
-          <Grid item xs={12} md={6} sx={{ display: 'flex', flexDirection: 'column' }}>
+          <Grid  className='aboutgridfive' item xs={12} md={6} sx={{ display: 'flex', flexDirection: 'column' }}>
             <Tabs
               value={tabIndex}
               onChange={handleTabChange}
@@ -94,7 +94,7 @@ const About = () => {
               <Tab label="Buyer" />
               <Tab label="Seller" />
             </Tabs>
-            <Box sx={{ paddingTop: '20px' }}>
+            <Box  className='aboutboxfive' sx={{ paddingTop: '20px' }}>
               {tabIndex === 0 && (
                 <Box>
                   <ul style={{ color: 'white', padding: '0', listStyleType: 'none' }}>

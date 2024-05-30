@@ -23,3 +23,120 @@
 .post-requirement{
   color:'white !important'
 }
+
+
+
+/* --------------------------------------------media quires--------------------------------------------------- */
+
+
+@media only screen and (min-width:280px) and (max-width:479.98px){
+  
+  /* -------------------------------navbar------------------------------ */
+  .navbarboxone{
+    margin-left: 0px !important;
+  }
+  .navbarimageone{
+    height: 60px !important;
+  }
+  
+  /* ------------------------------------banner--------------------------------- */
+  .bannerheadone{
+    font-size: 25px !important;
+  }
+  .bannerheadtwo{
+    font-size: 15px !important;
+  }
+ .bannerboxone{
+  flex-direction: column !important;
+ }
+ 
+ 
+
+
+
+
+
+  /* -------------------------------about----------------------------------- */
+  .aboutbox{
+    padding: 0px 30px !important;
+  }
+  .aboutheadone{
+    font-size: 25px !important;
+
+  }
+  .aboutbuttonone{
+    margin-right: 0px !important;
+  }
+  .aboutgridone{
+    margin-top: 0px !important;
+    margin-left: 0px !important;
+    padding: 20px 0px !important;
+  }
+  .aboutboxtwo{
+    padding: 0px 30px !important;
+  }
+  
+  .aboutbuttontwo{
+    font-size: 10px !important;
+    font-weight:600 !important;
+  }
+  .aboutboxthree{
+    margin: 30px 30px !important;
+  }
+  .aboutboxfour{
+    padding: 0px 20px !important;
+  }
+  .aboutimage{
+    height: auto !important;
+  }
+
+  .aboutboxfive{
+    padding-top: 0px !important;
+  }
+  .custom-list-item{
+    margin-left: 5px !important;
+  }
+   /* ----------------------------verified-------------------------------- */
+
+
+   .verifiedheadone{
+    font-size: 24px !important;
+
+   }
+   
+   .verifiedline{
+    width: 37% !important;
+    bottom: 12px !important;
+    left: 63% !important;
+   }
+  /* --------------------------process--------------------------------- */
+  .processbox{
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+  
+  
+  .processheadone{
+    font-size: 26px !important;
+  }
+  .processheadtwo{
+    padding: 0px !important;
+    font-size: 13px !important;
+  }
+  .processtitle{
+    padding: 0px 20px !important;
+    font-size: 13px !important;
+
+  }
+
+
+  /* -------------------------------footer-------------------------------- */
+
+  .footerboxtwo{
+    flex-direction: column !important;
+  }
+  .footerboxthree{
+    text-align: center !important;
+    padding-top: 10px !important;
+  }
+}

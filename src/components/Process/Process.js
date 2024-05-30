@@ -16,10 +16,10 @@ const iconStyle = {
 
 const Process = () => {
   return (
-    <Box mt={6} px={10} pb={14}>
-      <Typography variant="h4" sx={{ fontWeight: 700, mb: 2, textAlign: 'center' }}>How it Works</Typography>
+    <Box className='processbox' mt={6} px={10} pb={14}>
+      <Typography className='processheadone' variant="h4" sx={{ fontWeight: 700, mb: 2, textAlign: 'center' }}>How it Works</Typography>
       
-      <Typography variant="body1" sx={{ mb: 5, textAlign: 'center', padding: '0px 200px' }}>
+      <Typography className='processheadtwo' variant="body1" sx={{ mb: 5, textAlign: 'center', padding: '0px 200px' }}>
         Buyers post their needs and review top suppliers, while suppliers complete profiles, connect with potential buyers, and build successful business relationships, sharing valuable feedback.
       </Typography>
 
@@ -36,7 +36,7 @@ const Process = () => {
             <Card sx={{ bgcolor: index % 2 === 0 ? '#e8fbff' : 'white', height: '100%' }}>
               <CardContent sx={{ height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                 <img src={item.image} alt={`${item.title} icon`} style={iconStyle} />
-                <Typography variant="h6" gutterBottom sx={{padding:'0px 40px', fontWeight:600,fontSize:'17px', textAlign:'center'}}>{item.title}</Typography>
+                <Typography className='processtitle' variant="h6" gutterBottom sx={{padding:'0px 40px', fontWeight:600,fontSize:'17px', textAlign:'center'}}>{item.title}</Typography>
               </CardContent>
             </Card>
           </Grid>
